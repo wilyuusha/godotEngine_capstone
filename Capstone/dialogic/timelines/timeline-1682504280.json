@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "During the quiz session, a timer will tick down every 3 seconds.\nEach tick will deal random damage to the player,\nso it's important to be quick in answering the questions."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682504280.json",
+		"name": "tutorial_sign2"
+	}
+}

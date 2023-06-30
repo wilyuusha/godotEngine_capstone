@@ -1,0 +1,16 @@
+## This is for item.gd
+func _ready();
+	var rand_val = randi() % 3
+	if rand_val == 0:
+		item_name = "Iron Sword"
+	else:
+		item_name = "Tree Branch"
+	
+	$TextureRect.texture = load("res://Assets/itemIcons/" + item_name + ".png")
+	var stack_size = int(JsonScript.item_data[item_name]["StackSize"])
+	item_quantity = randi() % stack_size + 1
+	
+	if stack_size == 1:
+		$Label.visible = false
+	else:
+		$Label.text = String(item_quantity)

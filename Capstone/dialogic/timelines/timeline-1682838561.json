@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh no, I missed the exam explanation.\nI should ask the people who arrived early to get information about the exam."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682838561.json",
+		"name": "main-8"
+	}
+}

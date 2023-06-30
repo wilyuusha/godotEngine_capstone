@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Did you know there are different types of quizzes in this game?\nThere are normal quizzes and riddles. You can tell a riddle apart\nfrom a normal quiz by looking for the yellow particles.\nNormal quizzes have random colors. So keep an eye out for both types\nof quizzes and see if you can solve the riddles.\nDon't worry if you can't figure them out at first, it takes practice."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682513177.json",
+		"name": "tutorial_sign5"
+	}
+}

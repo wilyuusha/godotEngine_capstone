@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1682756773.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I have to rush to the portal now! Time is running out."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682823603.json",
+		"name": "main-3"
+	}
+}

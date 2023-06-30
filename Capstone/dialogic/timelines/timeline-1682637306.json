@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1684109867.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey there! This game was created as a Capstone project,\nand I would love your help by filling out a survey. It's really easy,\nall you have to do is click on the link at the top of your screen.\nYour feedback will be super helpful and greatly appreciated!\nThanks for being a part of my project!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682637306.json",
+		"name": "NPCdino"
+	}
+}

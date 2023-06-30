@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1684076911.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hello, my dear student! It's me, Gee-sensei, Remember,\nalways strive to complete your homework diligently and submit it on time.\nI believe in your abilities, and I know you can do it! Keep up the fantastic work,"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684111004.json",
+		"name": "NPCMartha"
+	}
+}

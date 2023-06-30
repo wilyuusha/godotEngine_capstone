@@ -1,0 +1,88 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Assets/Popup Emotes/pipo-popupemotes003.png" type="Texture" id=1]
+[ext_resource path="res://Questions/normalQuestion.gd" type="Script" id=2]
+[ext_resource path="res://Effects/Particles/floaty_64.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Music/sfx/sfx_question_timer.wav" type="AudioStream" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 29.75, 19.75 )
+
+[sub_resource type="CircleShape2D" id=6]
+radius = 16.0
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="CanvasItemMaterial" id=7]
+blend_mode = 1
+particles_animation = true
+particles_anim_h_frames = 7
+particles_anim_v_frames = 9
+particles_anim_loop = false
+
+[sub_resource type="Curve" id=8]
+_data = [ Vector2( 0.00436047, 0.291411 ), 0.0, 1.02004, 0, 0, Vector2( 0.452035, 0.156442 ), 0.0, 0.0, 0, 0, Vector2( 0.992733, 0.193251 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Curve" id=9]
+min_value = -1.0
+_data = [ Vector2( 0.109012, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.318314, 0.610684 ), 0.0, 0.0, 0, 0, Vector2( 0.643895, 0.782463 ), 0.0, 0.0, 0, 0, Vector2( 0.725291, -1 ), 0.0, 0.0, 0, 0 ]
+
+[node name="normalQuestion" type="Area2D"]
+pause_mode = 2
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="DialogicButton" type="TouchScreenButton" parent="."]
+position = Vector2( -25, -37 )
+shape = SubResource( 6 )
+action = "ui_accept"
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="DialogicButton"]
+visible = false
+position = Vector2( 17, 17 )
+frames = SubResource( 5 )
+playing = true
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+pause_mode = 2
+material = SubResource( 7 )
+amount = 30
+texture = ExtResource( 3 )
+gravity = Vector2( 0, 0 )
+initial_velocity = 40.0
+orbit_velocity = 1.0
+scale_amount_curve = SubResource( 8 )
+hue_variation_curve = SubResource( 9 )
+
+[node name="sfx_tick_clock" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 4 )
+volume_db = -20.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

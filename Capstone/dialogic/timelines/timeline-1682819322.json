@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "If you wish to obtain a School ID, you must do so at the portal. It is required for identification purposes."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682819322.json",
+		"name": "NPCrandom"
+	}
+}

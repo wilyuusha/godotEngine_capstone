@@ -1,0 +1,20 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Insulin, which regulates blood sugar levels, is produced by the \"Pancreas\".\nIt allows cells to absorb glucose from the bloodstream for energy.\nInsufficient insulin production or function can lead to imbalances\nin blood sugar, such as in diabetes."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 2
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684016695.json",
+		"name": "bookshelf1"
+	}
+}

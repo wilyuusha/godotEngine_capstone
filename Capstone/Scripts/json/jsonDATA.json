@@ -1,0 +1,13 @@
+{
+  "School_Id": {
+    "ItemCategory": "Important",
+    "StackSize": 1,
+    "Description": "Used to enter the school."
+  },
+  "Heart": {
+    "ItemCategory": "Important",
+    "StackSize": 1,
+    "Description": "A heart."
+  }
+	
+}

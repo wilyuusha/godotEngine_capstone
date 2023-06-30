@@ -1,0 +1,161 @@
+{
+	"events": [
+		{
+			"character": "character-1682756701.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "It seems like you're in a bit of trouble. Do you require my assistance?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682756701.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Is this the material you've been searching for, \njust like all those other students who are looking for it? Well, guess what?\nI happen to have it. But if you want it, it won't come cheap. Let's make a deal,\nshall we?\""
+		},
+		{
+			"character": "character-1682756701.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I'll sell it to you for 50 gold, but keep it quiet. Special deal, just for you."
+		},
+		{
+			"choice": "Buy",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "character-1682756701.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hehe"
+		},
+		{
+			"choice": "Pass",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682756701.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Suit yourself"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Maybe",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682756701.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmmm."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1682756701.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What's with the hesitation?"
+		},
+		{
+			"character": "character-1682756773.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I need to obtain certain materials to pass my exam, but this place is completely empty."
+		},
+		{
+			"character": "character-1682756701.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ah, I see you're in need of something important. Perhaps it's something valuable\nlike this rare material? If you want it, I'll let you have it for a price\n50 gold, to be exact. Do you want it?"
+		},
+		{
+			"choice": "Buy it",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682756701.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hehe"
+		},
+		{
+			"emit_signal": "",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "Rather find it myself",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682756701.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As you wish. You might want to consider buying it later, but I can't guarantee it will still be available."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I don't talk to strangers.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682756701.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Very well."
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682756196.json",
+		"name": "NPCreaper"
+	}
+}

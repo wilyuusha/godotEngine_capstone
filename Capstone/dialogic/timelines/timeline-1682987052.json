@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Welcome to the tutorial stage! We're here to help you get started with the game.\nMake sure to read the signs carefully so you can understand how the game works."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682987052.json",
+		"name": "tutorial-enter"
+	}
+}

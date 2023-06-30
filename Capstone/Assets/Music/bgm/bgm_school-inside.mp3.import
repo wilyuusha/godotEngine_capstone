@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bgm_school-inside.mp3-abe1e03ae080f1fc59aec23396b90fd4.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/bgm/bgm_school-inside.mp3"
+dest_files=[ "res://.import/bgm_school-inside.mp3-abe1e03ae080f1fc59aec23396b90fd4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

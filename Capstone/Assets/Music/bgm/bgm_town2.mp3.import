@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bgm_town2.mp3-0857461ef47724e34deb015b4cbd7dca.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/bgm/bgm_town2.mp3"
+dest_files=[ "res://.import/bgm_town2.mp3-0857461ef47724e34deb015b4cbd7dca.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

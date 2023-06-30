@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The \"Stomach\" is a muscular organ in the upper abdomen that breaks down\nfood through mechanical and chemical processes. It secretes gastric juices\ncontaining enzymes and acid for digestion and sterilization of food. processing."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684017377.json",
+		"name": "bookshelf19"
+	}
+}

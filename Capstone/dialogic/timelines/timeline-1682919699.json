@@ -1,0 +1,89 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I am a type of cell in the human body that is responsible for carrying oxygen to the rest of the body."
+		},
+		{
+			"choice": "Red blood cell",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "CORRECT!"
+		},
+		{
+			"emit_signal": "true",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "White blood cell",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "WRONG!"
+		},
+		{
+			"emit_signal": "false",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "Platelet",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "WRONG!"
+		},
+		{
+			"emit_signal": "false",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "Nerve cell",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "WRONG!"
+		},
+		{
+			"emit_signal": "false",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682919699.json",
+		"name": "riddle-10"
+	}
+}

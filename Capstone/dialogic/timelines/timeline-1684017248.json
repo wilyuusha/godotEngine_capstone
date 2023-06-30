@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The gland that produces adrenaline is called the \"Adrenal Gland\".\nThe adrenal glands are located on top of each kidney and\nare responsible for producing various hormones, including adrenaline,\nalso known as epinephrine."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684017248.json",
+		"name": "bookshelf15"
+	}
+}

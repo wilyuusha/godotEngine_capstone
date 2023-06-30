@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Admin Testing Room/TX Props.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ruinedMap/Chest.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 96, 30, 32, 31 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 96, 76, 32, 49 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 12.7492, 20.5954 )
+
+[node name="Chest" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="closed" type="Sprite" parent="."]
+scale = Vector2( 0.766129, 0.790844 )
+texture = SubResource( 2 )
+
+[node name="opened" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -4 )
+scale = Vector2( 0.75, 0.670137 )
+texture = SubResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 0.941235, -0.582653 )
+shape = SubResource( 4 )

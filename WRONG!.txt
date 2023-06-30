@@ -1,0 +1,15 @@
+SceneTransition.play_transition_forward()
+		yield(get_tree().create_timer(2), "timeout")
+		get_tree().change_scene("res://Scenes/mcRoom.tscn")
+		SceneTransition.play_transition_backward()
+		yield(get_tree().create_timer(2), "timeout")
+
+print(saved_game_data.game_entered_counter)
+		SaveLoadState.save_data()
+		SceneTransition.play_transition_forward()
+		get_tree().paused = true
+		yield(SceneTransition, "transition_completed")
+		get_tree().change_scene("res://Scenes/mcRoom.tscn")
+		SceneTransition.play_transition_backward()
+		get_tree().paused = false
+		yield(SceneTransition, "transition_completed")

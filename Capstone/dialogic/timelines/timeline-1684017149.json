@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The \"Heart\" pumps blood throughout the body. It is responsible\nfor generating the force necessary to circulate blood and ensure that oxygen,\nnutrients, and other essential substances reach the organs and tissues."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684017149.json",
+		"name": "bookshelf10"
+	}
+}

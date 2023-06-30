@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Did you know that the reason why blood appears red\nis because it contains a protein called hemoglobin,\nwhich binds with oxygen and gives the blood its characteristic color?"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682643349.json",
+		"name": "NPCtomato"
+	}
+}

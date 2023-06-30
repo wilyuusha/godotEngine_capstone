@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bgm_mcRoom.mp3-3df13304c70c047cb97bc512eeb5badd.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/bgm/bgm_mcRoom.mp3"
+dest_files=[ "res://.import/bgm_mcRoom.mp3-3df13304c70c047cb97bc512eeb5badd.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

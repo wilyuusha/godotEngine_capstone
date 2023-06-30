@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I am something in your body that helps keep you alive by pumping blood\nand oxygen all over your body.  I help you breathe, move, and think."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682839183.json",
+		"name": "heart_hint"
+	}
+}

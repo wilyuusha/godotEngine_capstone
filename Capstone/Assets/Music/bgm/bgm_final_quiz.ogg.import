@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bgm_final_quiz.ogg-944e7c2aeb29982d9508b7b3ed8eedf2.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/bgm/bgm_final_quiz.ogg"
+dest_files=[ "res://.import/bgm_final_quiz.ogg-944e7c2aeb29982d9508b7b3ed8eedf2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

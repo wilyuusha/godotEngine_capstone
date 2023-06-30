@@ -1,0 +1,20 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Small Intestine\" a tube-like organ located between the stomach and large intestine.\nIt is responsible breaking down food into smaller molecules and absorbing nutrients\ninto the bloodstream. The small intestine has specialized structures called villi\nand microvilli that increase its surface area, allowing for efficient digestion\nand absorption of nutrients."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 2
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684016771.json",
+		"name": "bookshelf5"
+	}
+}

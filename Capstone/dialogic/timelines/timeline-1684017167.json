@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The \"Bloodstream\" carries oxygen to the rest of the body through \"Red Blood Cells\".\nOxygen binds to hemoglobin in red blood cells and is transported to tissues\nand organs, ensuring they receive the oxygen they need for their metabolic processes."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684017167.json",
+		"name": "bookshelf11"
+	}
+}

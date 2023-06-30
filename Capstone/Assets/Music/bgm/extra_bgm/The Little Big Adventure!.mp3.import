@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/The Little Big Adventure!.mp3-9e200ba813425e320548ae249db4980b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/bgm/extra_bgm/The Little Big Adventure!.mp3"
+dest_files=[ "res://.import/The Little Big Adventure!.mp3-9e200ba813425e320548ae249db4980b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

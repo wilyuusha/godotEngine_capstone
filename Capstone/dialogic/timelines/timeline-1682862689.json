@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The time has come for us to enter the chamber.\nHowever, before we do so, let us make the necessary preparations."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682862689.json",
+		"name": "main-14"
+	}
+}

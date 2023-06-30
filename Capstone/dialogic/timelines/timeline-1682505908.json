@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Finally, once you meet a certain condition, the portal will open\nand take you back to the town. Keep an eye out for this portal and\nmake sure to meet the condition so you can proceed to the next level."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682505908.json",
+		"name": "tutorial_sign4"
+	}
+}

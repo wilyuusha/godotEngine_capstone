@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The tiny vessels that deliver blood to body cells are called \"Capillaries\".\nCapillaries are the smallest and thinnest blood vessels in the body,\nforming an intricate network throughout tissues and organs.\nThey connect the arterial and venous systems, allowing for the exchange of oxygen,\nnutrients, and waste products between the blood and surrounding cells."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684017131.json",
+		"name": "bookshelf9"
+	}
+}

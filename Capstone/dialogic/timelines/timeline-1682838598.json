@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It looks like they've assigned some task to do and It said to find a material.\nI better start searching for the answer."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682838598.json",
+		"name": "main-9"
+	}
+}

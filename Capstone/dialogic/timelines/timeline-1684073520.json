@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1684069818.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thank you so much for helping me,\nHere,take this. It's a key use this to open the door above\nGood luck!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684073520.json",
+		"name": "door_quest_complete"
+	}
+}

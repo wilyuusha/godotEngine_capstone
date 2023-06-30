@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The liver is a large organ located in the upper right abdomen.\nIt performs multiple vital functions, including bile production for fat digestion,\ndetoxification of harmful substances, and metabolism of nutrients. Additionally,\nthe liver stores vitamins, produces important proteins, and helps regulate\nblood sugar levels and cholesterol metabolism."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684017404.json",
+		"name": "bookshelf20"
+	}
+}

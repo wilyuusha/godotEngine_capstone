@@ -1,0 +1,72 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Which organ is responsible for producing insulin?"
+		},
+		{
+			"choice": "Liver",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "WRONG!"
+		},
+		{
+			"emit_signal": "false",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "Pancreas",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "CORRECT!"
+		},
+		{
+			"emit_signal": "true",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "Kidneys",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "WRONG!"
+		},
+		{
+			"emit_signal": "false",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1681566960.json",
+		"name": "normalQuestion2"
+	}
+}

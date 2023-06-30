@@ -1,0 +1,287 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Assets/Inventory/item_slot_default_background.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Inventory/default_inventory_background.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/slots.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/inventory.gd" type="Script" id=4]
+[ext_resource path="res://Fonts/04B_30__.TTF" type="DynamicFontData" id=5]
+[ext_resource path="res://Assets/More Assets/Kyrises_16x16_RPG_Icon_Pack_V1.3/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/coin_04d.png" type="Texture" id=6]
+[ext_resource path="res://Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Scripts/guiGold.gd" type="Script" id=8]
+[ext_resource path="res://Assets/itemIcons/School_Id.png" type="Texture" id=9]
+[ext_resource path="res://Assets/itemIcons/heart.png" type="Texture" id=10]
+[ext_resource path="res://Assets/More Assets/Kyrises_16x16_RPG_Icon_Pack_V1.3/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/scroll_01a.png" type="Texture" id=11]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 180, 320 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 36
+outline_color = Color( 0.0470588, 0.0431373, 0.0431373, 1 )
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 18, 18 )
+
+[node name="Inventory" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Close_UI" type="TouchScreenButton" parent="."]
+shape = SubResource( 4 )
+action = "close_ui"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -18.0
+margin_top = 130.0
+margin_right = 326.0
+margin_bottom = 440.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Gold" type="Label" parent="TextureRect"]
+anchor_left = 0.399
+anchor_top = 0.241
+anchor_right = 0.399
+anchor_bottom = 0.241
+margin_left = -33.256
+margin_top = -9.71001
+margin_right = 77.744
+margin_bottom = 22.29
+rect_scale = Vector2( 0.6, 0.6 )
+custom_fonts/font = SubResource( 3 )
+text = ": "
+valign = 1
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Gold_Icon" type="Sprite" parent="TextureRect/Gold"]
+position = Vector2( -25, 16.6666 )
+scale = Vector2( 3.02084, 2.27933 )
+texture = ExtResource( 6 )
+
+[node name="Name" type="Label" parent="TextureRect"]
+anchor_left = 0.582
+anchor_top = 0.077
+anchor_right = 0.582
+anchor_bottom = 0.077
+margin_left = -124.208
+margin_top = -12.87
+margin_right = 230.792
+margin_bottom = 24.13
+rect_scale = Vector2( 0.7, 0.7 )
+custom_fonts/font = SubResource( 2 )
+text = "COLLECTIONS"
+uppercase = true
+
+[node name="GridContainer" type="GridContainer" parent="TextureRect"]
+anchor_left = 0.581
+anchor_top = 0.5
+anchor_right = 0.581
+anchor_bottom = 0.5
+margin_left = -128.864
+margin_top = -58.0
+margin_right = 387.136
+margin_bottom = 272.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_constants/vseparation = 11
+custom_constants/hseparation = 4
+columns = 5
+
+[node name="Slot1" type="Panel" parent="TextureRect/GridContainer"]
+margin_right = 100.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot2" type="Panel" parent="TextureRect/GridContainer"]
+margin_left = 104.0
+margin_right = 204.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot3" type="Panel" parent="TextureRect/GridContainer"]
+margin_left = 208.0
+margin_right = 308.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot4" type="Panel" parent="TextureRect/GridContainer"]
+margin_left = 312.0
+margin_right = 412.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot5" type="Panel" parent="TextureRect/GridContainer"]
+margin_left = 416.0
+margin_right = 516.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot6" type="Panel" parent="TextureRect/GridContainer"]
+margin_top = 111.0
+margin_right = 100.0
+margin_bottom = 211.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot7" type="Panel" parent="TextureRect/GridContainer"]
+margin_left = 104.0
+margin_top = 111.0
+margin_right = 204.0
+margin_bottom = 211.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot8" type="Panel" parent="TextureRect/GridContainer"]
+margin_left = 208.0
+margin_top = 111.0
+margin_right = 308.0
+margin_bottom = 211.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot9" type="Panel" parent="TextureRect/GridContainer"]
+margin_left = 312.0
+margin_top = 111.0
+margin_right = 412.0
+margin_bottom = 211.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot10" type="Panel" parent="TextureRect/GridContainer"]
+margin_left = 416.0
+margin_top = 111.0
+margin_right = 516.0
+margin_bottom = 211.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot11" type="Panel" parent="TextureRect/GridContainer"]
+margin_top = 222.0
+margin_right = 100.0
+margin_bottom = 322.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot12" type="Panel" parent="TextureRect/GridContainer"]
+margin_left = 104.0
+margin_top = 222.0
+margin_right = 204.0
+margin_bottom = 322.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot13" type="Panel" parent="TextureRect/GridContainer"]
+margin_left = 208.0
+margin_top = 222.0
+margin_right = 308.0
+margin_bottom = 322.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot14" type="Panel" parent="TextureRect/GridContainer"]
+margin_left = 312.0
+margin_top = 222.0
+margin_right = 412.0
+margin_bottom = 322.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Slot15" type="Panel" parent="TextureRect/GridContainer"]
+margin_left = 416.0
+margin_top = 222.0
+margin_right = 516.0
+margin_bottom = 322.0
+rect_min_size = Vector2( 100, 100 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="School_Id" type="TextureRect" parent="TextureRect"]
+margin_left = 71.0
+margin_top = 97.0
+margin_right = 121.0
+margin_bottom = 147.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="School_Id_Icon" type="TextureRect" parent="TextureRect/School_Id"]
+margin_left = 5.0
+margin_top = 14.0
+margin_right = 43.0
+margin_bottom = 36.0
+texture = ExtResource( 9 )
+expand = true
+
+[node name="Heart_Id" type="TextureRect" parent="TextureRect"]
+margin_left = 123.0
+margin_top = 96.0
+margin_right = 173.0
+margin_bottom = 147.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Heart_Icon" type="TextureRect" parent="TextureRect/Heart_Id"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 47.0
+margin_bottom = 45.0
+texture = ExtResource( 10 )
+expand = true
+
+[node name="Certificate_Id" type="TextureRect" parent="TextureRect"]
+margin_left = 175.0
+margin_top = 96.0
+margin_right = 225.0
+margin_bottom = 147.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Certificate_Icon" type="TextureRect" parent="TextureRect/Certificate_Id"]
+margin_left = 7.0
+margin_top = 8.0
+margin_right = 44.0
+margin_bottom = 43.0
+texture = ExtResource( 11 )
+stretch_mode = 6

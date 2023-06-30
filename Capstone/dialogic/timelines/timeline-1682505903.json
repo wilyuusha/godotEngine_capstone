@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Have you got the hang of it? There's one more thing you need to know.\nOn the left side of the screen, you'll see an NPC shop where you can buy potions.\nThese potions will help you on your journey, as the game deals\na ridiculous amount of tick damage. Make sure to stock up on potions to stay healthy!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682505903.json",
+		"name": "tutorial_sign3"
+	}
+}

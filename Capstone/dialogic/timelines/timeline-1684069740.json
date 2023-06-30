@@ -1,0 +1,55 @@
+{
+	"events": [
+		{
+			"character": "character-1684069818.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hello, can you help me find something?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Help the Adventurer?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1684069818.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thank you, I really appreciate it. Im looking for a material.\nIt's called \"White Blood Cells\". i need it for my research.\nIt should be around here, can you collect atleast 5."
+		},
+		{
+			"emit_signal": "true",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "false",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684069740.json",
+		"name": "door_quest_initiator"
+	}
+}

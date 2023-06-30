@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The fluid that surrounds the brain and spinal cord is called \"Cerebrospinal Fluid\".\nIt is a clear, colorless fluid that fills the spaceswithin the brain and spinal cord,\nknown as the subarachnoid space. "
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684017210.json",
+		"name": "bookshelf13"
+	}
+}

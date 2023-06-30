@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1682756773.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I can't get into the school building without my \"School ID\"!\nI need to find the person standing in front of the building quickly,\nas I believe they can provide me with one."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682818557.json",
+		"name": "main-2"
+	}
+}

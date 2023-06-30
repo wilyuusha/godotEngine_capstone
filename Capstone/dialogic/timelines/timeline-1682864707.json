@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Welcome, my dear student! Always remember to prioritize your studies\nand not neglect them. However, I encourage you to come back to this place often,\nas we have a plethora of books available for you to read and\ndeepen your knowledge. Take advantage of these resources and keep learning,\nmy young scholar!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682864707.json",
+		"name": "NPCteacher"
+	}
+}

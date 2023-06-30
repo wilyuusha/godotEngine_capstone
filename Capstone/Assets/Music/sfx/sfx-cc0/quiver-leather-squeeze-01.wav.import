@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/quiver-leather-squeeze-01.wav-aa821bbaa397e53ee1fb7dd0f25c6390.sample"
+
+[deps]
+
+source_file="res://Assets/Music/sfx/sfx-cc0/quiver-leather-squeeze-01.wav"
+dest_files=[ "res://.import/quiver-leather-squeeze-01.wav-aa821bbaa397e53ee1fb7dd0f25c6390.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

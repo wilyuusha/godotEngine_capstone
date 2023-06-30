@@ -1,0 +1,25 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Did you know there's another type of cell called white blood cells?\nThey're pretty awesome because they're part of our immune system and they come in many different types.\nWhite blood cells protect us from getting sick by fighting off germs and making\nspecial proteins called antibodies.\nIt's amazing how our body has all these different ways to keep us healthy!"
+		},
+		{
+			"block_input": true,
+			"event_id": "dialogic_050",
+			"wait_time": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1683207984.json",
+		"name": "NPCtwo"
+	}
+}

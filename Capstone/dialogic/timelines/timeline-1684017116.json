@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Blood picks up nutrients primarily in the \"Small Intestine\". After we eat,\nthe process of digestion breaks down food into smaller molecules in the stomach\nand small intestine. The nutrients, such as glucose, amino acids, vitamins, and minerals,\nare then absorbed into the bloodstream through the walls of the small intestine."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684017116.json",
+		"name": "bookshelf8"
+	}
+}

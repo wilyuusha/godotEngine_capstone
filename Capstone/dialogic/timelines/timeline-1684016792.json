@@ -1,0 +1,20 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The \"Bone Marrow\" is responsible for the production of red blood cells,\nwhite blood cells, and platelets through a process called hematopoiesis.\nThese blood cells have vital roles in oxygen transport, immune defense,\nand blood clotting, respectively."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 2
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684016792.json",
+		"name": "bookshelf6"
+	}
+}

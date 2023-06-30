@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The \"Radius\" is the bone that connects the elbow to the wrist,\nlocated on the thumb side of the forearm. Together with the ulna,\nit forms the bones of the forearm. The radius extends from the\nlateral side of the elbow joint to the wrist joint, enabling movement\nand rotation of the hand and forearm."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684017264.json",
+		"name": "bookshelf16"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Plasma Cells\" are specialized white blood cells derived from B lymphocytes.\nTheir primary function is to produce and release antibodies,\nalso known as immunoglobulins. Antibodies play a crucial role in the immune\nresponse by recognizing and binding to specific antigens."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684017281.json",
+		"name": "bookshelf17"
+	}
+}

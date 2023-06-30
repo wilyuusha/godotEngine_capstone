@@ -1,0 +1,113 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Assets/Char-Mats Sprite/Characters_free/Martha_Pink.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/NPC Villagers/marthaNPC.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Shadows/MediumShadow.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Popup Emotes/pipo-popupemotes018.png" type="Texture" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 5.0
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "walk_down"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2 ]
+}
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 16.5, 12.5 )
+
+[sub_resource type="CircleShape2D" id=5]
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 4 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 4 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="MarthaNPC" type="StaticBody2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -12 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 1 )
+hframes = 6
+vframes = 4
+frame = 1
+
+[node name="Shadow" type="Sprite" parent="."]
+position = Vector2( -7.10543e-15, -5.96046e-08 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -1 )
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 2 )
+anims/walk_down = SubResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0, 6 )
+shape = SubResource( 4 )
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2( 4, -41 )
+shape = SubResource( 5 )
+action = "ui_accept"
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="TouchScreenButton"]
+position = Vector2( 10.25, 11 )
+scale = Vector2( 0.609375, 0.65625 )
+frames = SubResource( 9 )
+frame = 2
+playing = true
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

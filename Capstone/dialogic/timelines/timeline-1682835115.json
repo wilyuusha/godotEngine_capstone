@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The portal to go back to town should be open by now,\nas I've answered at least 5 quizzes.\nI need to hurry and make my way there."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682835115.json",
+		"name": "main-6"
+	}
+}

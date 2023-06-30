@@ -1,0 +1,140 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scripts/statistics.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Char-Mats Sprite/schriftrolle.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/autoload/timerDisplay.gd" type="Script" id=4]
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 180, 320 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 21
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 21
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 21
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 21
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 19
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 20
+font_data = ExtResource( 2 )
+
+[node name="Statistics" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Close_UI" type="TouchScreenButton" parent="."]
+shape = SubResource( 6 )
+action = "statistics_close_ui"
+
+[node name="Panel" type="TextureRect" parent="."]
+margin_left = 25.0
+margin_top = 130.0
+margin_right = 543.0
+margin_bottom = 595.0
+rect_scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 3 )
+
+[node name="Answered" type="Label" parent="Panel"]
+anchor_left = 0.261
+anchor_top = 0.296
+anchor_right = 0.261
+anchor_bottom = 0.296
+margin_left = -51.8647
+margin_top = -10.9733
+margin_right = 52.1353
+margin_bottom = 11.0267
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "Answered -"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+anchor_left = 0.495
+anchor_top = 0.421
+anchor_right = 0.495
+anchor_bottom = 0.421
+margin_left = -108.077
+margin_top = -37.4317
+margin_right = 107.923
+margin_bottom = 37.5683
+custom_constants/separation = 9
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="correct" type="Label" parent="Panel/VBoxContainer"]
+margin_right = 216.0
+margin_bottom = 19.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Correct:"
+
+[node name="wrong" type="Label" parent="Panel/VBoxContainer"]
+margin_top = 28.0
+margin_right = 216.0
+margin_bottom = 47.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Wrong:"
+
+[node name="total" type="Label" parent="Panel/VBoxContainer"]
+margin_top = 56.0
+margin_right = 216.0
+margin_bottom = 75.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Total:"
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Panel"]
+anchor_left = 0.595
+anchor_top = 0.77
+anchor_right = 0.595
+anchor_bottom = 0.77
+margin_left = -81.21
+margin_top = -3.04999
+margin_right = 78.79
+margin_bottom = 21.95
+custom_constants/separation = 9
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TimeDisplay" type="Label" parent="Panel/HBoxContainer"]
+margin_right = 160.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "00:00:00"
+align = 1
+valign = 1
+script = ExtResource( 4 )
+
+[node name="Timer" type="Timer" parent="Panel/HBoxContainer/TimeDisplay"]
+autostart = true
+
+[node name="Label" type="Label" parent="Panel"]
+anchor_left = 0.42
+anchor_top = 0.601
+anchor_right = 0.42
+anchor_bottom = 0.601
+margin_left = -95.8934
+margin_top = -9.46503
+margin_right = 96.1066
+margin_bottom = 9.53497
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 10 )
+text = "Death Counter: 0"
+
+[connection signal="timeout" from="Panel/HBoxContainer/TimeDisplay/Timer" to="Panel/HBoxContainer/TimeDisplay" method="_on_Timer_timeout"]

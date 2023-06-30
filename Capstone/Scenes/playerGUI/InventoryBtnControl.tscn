@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/itemIcons/backpack.png" type="Texture" id=1]
+[ext_resource path="res://Assets/itemIcons/tome.png" type="Texture" id=2]
+[ext_resource path="res://Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[node name="InventoryBtnControl" type="HBoxContainer"]
+custom_constants/separation = 120
+alignment = 1
+
+[node name="StatisticsBtnTouch" type="TouchScreenButton" parent="."]
+scale = Vector2( 0.4375, 0.4375 )
+normal = ExtResource( 2 )
+action = "statistics"
+
+[node name="stat_label" type="Label" parent="StatisticsBtnTouch"]
+anchor_left = 0.5
+anchor_top = 0.034
+anchor_right = 0.5
+anchor_bottom = 0.034
+margin_left = -52.571
+margin_top = -13.352
+margin_right = 55.429
+margin_bottom = 13.648
+custom_fonts/font = SubResource( 2 )
+text = "RECORD"
+align = 1
+valign = 1
+
+[node name="InventoryBtnTouch" type="TouchScreenButton" parent="."]
+position = Vector2( 64, -4.76837e-07 )
+scale = Vector2( 0.507812, 0.445312 )
+normal = ExtResource( 1 )
+action = "inventory"
+
+[node name="collection_label" type="Label" parent="InventoryBtnTouch"]
+anchor_left = 0.5
+anchor_top = 0.035
+anchor_right = 0.5
+anchor_bottom = 0.035
+margin_left = -28.554
+margin_top = -13.48
+margin_right = 25.446
+margin_bottom = 13.52
+custom_fonts/font = SubResource( 1 )
+text = "BAG"
+align = 1
+valign = 1

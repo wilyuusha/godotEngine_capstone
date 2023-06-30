@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "White blood cells are a crucial component of the immune system and play a\nvital role in defending the body against infections, bacteria, viruses, and other\nharmful microorganisms. They identify, attack, and destroy pathogens,\nhelping to keep the body healthy and free from infection."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684017193.json",
+		"name": "bookshelf12"
+	}
+}

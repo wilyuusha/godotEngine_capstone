@@ -1,0 +1,20 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Iris\" of the eye controls the size of the pupil, regulating the amount of light entering.\nBy contracting or relaxing its muscles, the iris adjusts the pupil size\nto accommodate different lighting conditions. Ultimately, the iris plays a\ncrucial role in controlling the amount of light that reaches the eye."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 2
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684016756.json",
+		"name": "bookshelf4"
+	}
+}

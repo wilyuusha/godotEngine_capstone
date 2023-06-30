@@ -1,0 +1,20 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Cerebrum\", specifically the motor cortex in the frontal lobe,\nis responsible for controlling voluntary movements. It sends signals to muscles\nthrough the spinal cord and peripheral nerves, allowing us to perform actions like walking and writing."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 2
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684016721.json",
+		"name": "bookshelf2"
+	}
+}

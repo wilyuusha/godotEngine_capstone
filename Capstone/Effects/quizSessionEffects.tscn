@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Effects/Particles/floaty_64.png" type="Texture" id=1]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 1
+particles_animation = true
+particles_anim_h_frames = 7
+particles_anim_v_frames = 7
+particles_anim_loop = false
+
+[sub_resource type="Curve" id=2]
+_data = [ Vector2( 0.0105422, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.504518, 0.59816 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.745399 ), 0.0, 0.0, 0, 0 ]
+
+[node name="Control" type="Control"]
+pause_mode = 2
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -180.0
+margin_top = -321.5
+margin_right = 180.0
+margin_bottom = 321.5
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+material = SubResource( 1 )
+position = Vector2( 167, 282.5 )
+amount = 50
+texture = ExtResource( 1 )
+emission_shape = 2
+emission_rect_extents = Vector2( 100, 200 )
+gravity = Vector2( 0, 0 )
+initial_velocity = 40.0
+orbit_velocity = 1.0
+scale_amount_random = 1.0
+scale_amount_curve = SubResource( 2 )

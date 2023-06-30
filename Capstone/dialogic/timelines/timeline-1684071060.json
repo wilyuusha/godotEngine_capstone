@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1684069818.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nice to meet you."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684071060.json",
+		"name": "NPCAdventurer-2"
+	}
+}

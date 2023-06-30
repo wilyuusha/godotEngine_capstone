@@ -1,0 +1,268 @@
+{
+	"files": [
+
+	],
+	"folders": {
+		"Characters": {
+			"files": [
+				"character-1682756701.json",
+				"character-1682756773.json",
+				"character-1684069818.json",
+				"character-1684076911.json",
+				"character-1684109867.json"
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": true
+			}
+		},
+		"Definitions": {
+			"files": [
+
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		},
+		"Themes": {
+			"files": [
+				"default-theme.cfg",
+				"theme-1682599616.cfg"
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		},
+		"Timelines": {
+			"files": [
+
+			],
+			"folders": {
+				"# Main Scenario": {
+					"files": [
+						"timeline-1682816954.json",
+						"timeline-1682818557.json",
+						"timeline-1682823603.json",
+						"timeline-1682834999.json",
+						"timeline-1682835043.json",
+						"timeline-1682835115.json",
+						"timeline-1682835687.json",
+						"timeline-1682838561.json",
+						"timeline-1682838598.json",
+						"timeline-1682841369.json",
+						"timeline-1682860865.json",
+						"timeline-1682862381.json",
+						"timeline-1682862569.json",
+						"timeline-1682862689.json",
+						"timeline-1682864304.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
+				"Bookshelf": {
+					"files": [
+						"timeline-1684016695.json",
+						"timeline-1684016721.json",
+						"timeline-1684016742.json",
+						"timeline-1684016756.json",
+						"timeline-1684016771.json",
+						"timeline-1684016792.json",
+						"timeline-1684017102.json",
+						"timeline-1684017116.json",
+						"timeline-1684017131.json",
+						"timeline-1684017149.json",
+						"timeline-1684017167.json",
+						"timeline-1684017193.json",
+						"timeline-1684017210.json",
+						"timeline-1684017231.json",
+						"timeline-1684017248.json",
+						"timeline-1684017264.json",
+						"timeline-1684017281.json",
+						"timeline-1684017357.json",
+						"timeline-1684017377.json",
+						"timeline-1684017404.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
+				"Final_Quiz": {
+					"files": [
+						"timeline-1682849427.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
+				"Hints": {
+					"files": [
+						"timeline-1682839183.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
+				"NPC": {
+					"files": [
+						"timeline-1682637223.json",
+						"timeline-1682637306.json",
+						"timeline-1682643349.json",
+						"timeline-1682756196.json",
+						"timeline-1682819322.json",
+						"timeline-1682821550.json",
+						"timeline-1682836685.json",
+						"timeline-1682864707.json",
+						"timeline-1683207972.json",
+						"timeline-1683207984.json",
+						"timeline-1683207995.json",
+						"timeline-1683208006.json",
+						"timeline-1683208017.json",
+						"timeline-1684071006.json",
+						"timeline-1684071060.json",
+						"timeline-1684111004.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
+				"Obtained": {
+					"files": [
+						"timeline-1682395432.json",
+						"timeline-1682755886.json",
+						"timeline-1682755893.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
+				"Quest": {
+					"files": [
+						"timeline-1684069740.json",
+						"timeline-1684073520.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
+				"Questions": {
+					"files": [
+						"timeline-1682230224.json",
+						"timeline-1681566934.json",
+						"timeline-1681827542.json",
+						"timeline-1681566960.json",
+						"timeline-1682208910.json",
+						"timeline-1682230524.json",
+						"timeline-1682230767.json",
+						"timeline-1682230949.json",
+						"timeline-1682231048.json",
+						"timeline-1682231335.json",
+						"timeline-1682231773.json",
+						"timeline-1682232003.json",
+						"timeline-1682232190.json",
+						"timeline-1682232401.json",
+						"timeline-1682232625.json",
+						"timeline-1682232812.json",
+						"timeline-1682233076.json",
+						"timeline-1682233365.json",
+						"timeline-1682233487.json",
+						"timeline-1682996641.json",
+						"timeline-1682996732.json",
+						"timeline-1682996804.json",
+						"timeline-1682996927.json",
+						"timeline-1684015389.json",
+						"timeline-1684015892.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Riddles": {
+					"files": [
+						"timeline-1682919449.json",
+						"timeline-1682919580.json",
+						"timeline-1682919591.json",
+						"timeline-1682919599.json",
+						"timeline-1682919609.json",
+						"timeline-1682919618.json",
+						"timeline-1682919634.json",
+						"timeline-1682919644.json",
+						"timeline-1682919687.json",
+						"timeline-1682919699.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
+				"Tutorials": {
+					"files": [
+						"timeline-1682504035.json",
+						"timeline-1682504280.json",
+						"timeline-1682505903.json",
+						"timeline-1682505908.json",
+						"timeline-1682513177.json",
+						"timeline-1682987052.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				}
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1682756773.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh no, I overslept! I need to hurry because I have an exam today,\nand if I don't pass it, I won't be able to go on my journey."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682816954.json",
+		"name": "main-1"
+	}
+}

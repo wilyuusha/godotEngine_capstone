@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This game consists of science quizzes that are designed for grade school-level topics.\nTo initiate a quiz, look for the particles on the right side of the screen.\nThese particles indicate that there's a quiz available for you to take.\nOnce you're close to the particles, emojis will pop up. Simply tap on the emojis to begin the quiz.\nGood luck!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682504035.json",
+		"name": "tutorial_sign1"
+	}
+}

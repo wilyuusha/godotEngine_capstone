@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Admin Testing Room/TX Plant.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Admin Testing Room/TX Shadow Plant.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 220, 205, 46, 24 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 216, 185, 47, 42 )
+
+[node name="BushesXL" type="Node2D"]
+
+[node name="Shadow" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.392157 )
+position = Vector2( 0, 1 )
+texture = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -9 )
+texture = SubResource( 2 )

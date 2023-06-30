@@ -1,0 +1,136 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Assets/Char-Mats Sprite/Characters_free/Jeremy Pink.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/player.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/pickupZone.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Shadows/MediumShadow.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/Camera2D_ScreenShake.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/Hit-Yellow.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/Node Scenes/sfx_effects.tscn" type="PackedScene" id=7]
+
+[sub_resource type="AnimationNodeAnimation" id=13]
+animation = "idleLeft"
+
+[sub_resource type="AnimationNodeAnimation" id=14]
+animation = "idleRight"
+
+[sub_resource type="AnimationNodeAnimation" id=15]
+animation = "idleDown"
+
+[sub_resource type="AnimationNodeAnimation" id=16]
+animation = "idleUp"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=17]
+blend_point_0/node = SubResource( 13 )
+blend_point_0/pos = Vector2( -1, 0 )
+blend_point_1/node = SubResource( 14 )
+blend_point_1/pos = Vector2( 1, 0 )
+blend_point_2/node = SubResource( 15 )
+blend_point_2/pos = Vector2( 0, 1.1 )
+blend_point_3/node = SubResource( 16 )
+blend_point_3/pos = Vector2( 0, -1.1 )
+min_space = Vector2( -1, -1.1 )
+max_space = Vector2( 1, 1.1 )
+blend_mode = 1
+
+[sub_resource type="AnimationNodeAnimation" id=19]
+animation = "walkLeft"
+
+[sub_resource type="AnimationNodeAnimation" id=20]
+animation = "walkRight"
+
+[sub_resource type="AnimationNodeAnimation" id=21]
+animation = "walkDown"
+
+[sub_resource type="AnimationNodeAnimation" id=22]
+animation = "walkUp"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=18]
+blend_point_0/node = SubResource( 19 )
+blend_point_0/pos = Vector2( -1, 0 )
+blend_point_1/node = SubResource( 20 )
+blend_point_1/pos = Vector2( 1, 0 )
+blend_point_2/node = SubResource( 21 )
+blend_point_2/pos = Vector2( 0, 1.1 )
+blend_point_3/node = SubResource( 22 )
+blend_point_3/pos = Vector2( 0, -1.1 )
+min_space = Vector2( -1, -1.1 )
+max_space = Vector2( 1, 1.1 )
+blend_mode = 1
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=23]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=24]
+
+[sub_resource type="AnimationNodeStateMachine" id=7]
+states/idleAnimation/node = SubResource( 17 )
+states/idleAnimation/position = Vector2( 196.882, 78.0521 )
+states/runAnimation/node = SubResource( 18 )
+states/runAnimation/position = Vector2( 498.059, 78.2734 )
+transitions = [ "idleAnimation", "runAnimation", SubResource( 23 ), "runAnimation", "idleAnimation", SubResource( 24 ) ]
+start_node = "idleAnimation"
+graph_offset = Vector2( 0, -25.3094 )
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=8]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 5.0
+height = 0.0
+
+[sub_resource type="CapsuleShape2D" id=25]
+radius = 16.0
+height = 11.0
+
+[node name="Player" type="KinematicBody2D"]
+pause_mode = 2
+scale = Vector2( 0.8, 0.8 )
+collision_layer = 49155
+collision_mask = 49155
+script = ExtResource( 2 )
+
+[node name="Normal" type="Sprite" parent="."]
+position = Vector2( 0, -14 )
+texture = ExtResource( 1 )
+hframes = 6
+vframes = 4
+frame = 1
+
+[node name="Shadow" type="Sprite" parent="."]
+position = Vector2( 0, 1 )
+texture = ExtResource( 4 )
+
+[node name="Hit_effects" type="Sprite" parent="."]
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+hframes = 4
+vframes = 4
+
+[node name="AnimationPlayer" parent="." instance=ExtResource( 7 )]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 7 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource( 8 )
+parameters/idleAnimation/blend_position = Vector2( -0.00242484, 0.112366 )
+parameters/runAnimation/blend_position = Vector2( 0, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -4 )
+shape = SubResource( 1 )
+
+[node name="pickupZone" type="Area2D" parent="."]
+visible = false
+position = Vector2( 0, -15 )
+collision_layer = 0
+collision_mask = 16384
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pickupZone"]
+position = Vector2( 0, 0.5 )
+shape = SubResource( 25 )
+
+[node name="Camera2D" parent="." instance=ExtResource( 5 )]
+
+[connection signal="body_entered" from="pickupZone" to="pickupZone" method="_on_pickupZone_body_entered"]
+[connection signal="body_exited" from="pickupZone" to="pickupZone" method="_on_pickupZone_body_exited"]

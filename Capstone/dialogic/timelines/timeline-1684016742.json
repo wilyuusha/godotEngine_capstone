@@ -1,0 +1,20 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Neurons\" are the smallest units of the nervous system, responsible\nfor transmitting electrical signals. They play a crucial role\nin carrying information throughout the body\nand enabling communication within the nervous system."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684016742.json",
+		"name": "bookshelf3"
+	}
+}

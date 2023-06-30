@@ -1,0 +1,289 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Scripts/shop_interface.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Inventory/default_inventory_background.png" type="Texture" id=3]
+[ext_resource path="res://Assets/itemIcons/Potion.png" type="Texture" id=4]
+[ext_resource path="res://Fonts/04B_30__.TTF" type="DynamicFontData" id=5]
+[ext_resource path="res://Assets/Inventory/item_slot_default_background.png" type="Texture" id=6]
+[ext_resource path="res://Assets/More Assets/Kyrises_16x16_RPG_Icon_Pack_V1.3/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/32x32/coin_04d.png" type="Texture" id=7]
+[ext_resource path="res://Assets/More Assets/Kyrises_16x16_RPG_Icon_Pack_V1.3/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/32x32/armor_01a.png" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=9]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.172549, 0.180392, 0.180392, 1 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="DynamicFont" id=5]
+size = 21
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 11
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 11
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 11
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="CloseScene" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.337
+anchor_right = 0.5
+anchor_bottom = 0.337
+margin_left = -204.0
+margin_top = -95.68
+margin_right = 151.0
+margin_bottom = 96.32
+texture = ExtResource( 3 )
+expand = true
+
+[node name="shop_label" type="Label" parent="TextureRect"]
+anchor_left = 0.572
+anchor_top = 0.076
+anchor_right = 0.572
+anchor_bottom = 0.076
+margin_left = -30.06
+margin_top = -8.592
+margin_right = 29.94
+margin_bottom = 8.408
+custom_fonts/font = SubResource( 1 )
+text = "SHOP"
+
+[node name="texture_horizontal" type="HBoxContainer" parent="TextureRect"]
+anchor_left = 0.575
+anchor_top = 0.409
+anchor_right = 0.575
+anchor_bottom = 0.409
+margin_left = -132.125
+margin_top = -42.528
+margin_right = 131.875
+margin_bottom = 42.472
+custom_constants/separation = 19
+alignment = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="potion_normal" type="VBoxContainer" parent="TextureRect/texture_horizontal"]
+margin_left = 15.0
+margin_right = 80.0
+margin_bottom = 85.0
+custom_constants/separation = 3
+
+[node name="Corner\'s" type="TextureRect" parent="TextureRect/texture_horizontal/potion_normal"]
+margin_right = 65.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 0, 64 )
+texture = ExtResource( 6 )
+expand = true
+
+[node name="potion_icon" type="TextureRect" parent="TextureRect/texture_horizontal/potion_normal/Corner\'s"]
+margin_right = 65.0
+margin_bottom = 64.0
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="potion_price" type="Label" parent="TextureRect/texture_horizontal/potion_normal/Corner\'s"]
+margin_right = 40.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0.996078, 0.866667, 0.027451, 1 )
+custom_fonts/font = SubResource( 9 )
+text = " 4"
+valign = 2
+
+[node name="potion_btn" type="Button" parent="TextureRect/texture_horizontal/potion_normal"]
+margin_top = 67.0
+margin_right = 65.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 65, 18 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/normal = SubResource( 4 )
+text = "BUY"
+
+[node name="potion_enhance" type="VBoxContainer" parent="TextureRect/texture_horizontal"]
+margin_left = 99.0
+margin_right = 164.0
+margin_bottom = 85.0
+custom_constants/separation = 3
+
+[node name="Corner\'s" type="TextureRect" parent="TextureRect/texture_horizontal/potion_enhance"]
+margin_right = 65.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 0, 64 )
+texture = ExtResource( 6 )
+expand = true
+
+[node name="potion_icon" type="TextureRect" parent="TextureRect/texture_horizontal/potion_enhance/Corner\'s"]
+margin_right = 65.0
+margin_bottom = 64.0
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="+ sign" type="Label" parent="TextureRect/texture_horizontal/potion_enhance/Corner\'s/potion_icon"]
+anchor_left = 0.769
+anchor_top = 0.203
+anchor_right = 0.769
+anchor_bottom = 0.203
+margin_left = -5.985
+margin_top = -8.992
+margin_right = 6.015
+margin_bottom = 10.008
+custom_colors/font_color = Color( 0.92549, 0.356863, 0.356863, 1 )
+custom_fonts/font = SubResource( 5 )
+text = "+"
+align = 2
+valign = 2
+
+[node name="enhance_price" type="Label" parent="TextureRect/texture_horizontal/potion_enhance/Corner\'s"]
+margin_right = 40.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0.996078, 0.866667, 0.027451, 1 )
+custom_fonts/font = SubResource( 9 )
+text = " 12"
+valign = 2
+
+[node name="enhance_btn" type="Button" parent="TextureRect/texture_horizontal/potion_enhance"]
+margin_top = 67.0
+margin_right = 65.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 65, 18 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/normal = SubResource( 4 )
+text = "BUY"
+
+[node name="char_tougher" type="VBoxContainer" parent="TextureRect/texture_horizontal"]
+margin_left = 183.0
+margin_right = 248.0
+margin_bottom = 85.0
+custom_constants/separation = 3
+
+[node name="Corner\'s" type="TextureRect" parent="TextureRect/texture_horizontal/char_tougher"]
+margin_right = 65.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 0, 64 )
+texture = ExtResource( 6 )
+expand = true
+
+[node name="armor_texture" type="TextureRect" parent="TextureRect/texture_horizontal/char_tougher/Corner\'s"]
+margin_right = 65.0
+margin_bottom = 64.0
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 4
+flip_h = true
+
+[node name="armor_price" type="Label" parent="TextureRect/texture_horizontal/char_tougher/Corner\'s"]
+margin_right = 40.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0.996078, 0.866667, 0.027451, 1 )
+custom_fonts/font = SubResource( 9 )
+text = " 12"
+valign = 2
+
+[node name="armor_btn" type="Button" parent="TextureRect/texture_horizontal/char_tougher"]
+margin_top = 67.0
+margin_right = 65.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 65, 18 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/normal = SubResource( 4 )
+text = "BUY"
+
+[node name="description_horizontal" type="HBoxContainer" parent="TextureRect"]
+margin_left = 87.0
+margin_top = 125.0
+margin_right = 313.0
+margin_bottom = 161.0
+custom_constants/separation = 40
+alignment = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="potion" type="Label" parent="TextureRect/description_horizontal"]
+margin_left = 4.0
+margin_right = 58.0
+margin_bottom = 36.0
+custom_fonts/font = SubResource( 6 )
+text = "+1 Potion
+
+"
+
+[node name="enhance_potion" type="Label" parent="TextureRect/description_horizontal"]
+margin_left = 98.0
+margin_right = 140.0
+margin_bottom = 36.0
+custom_fonts/font = SubResource( 7 )
+text = "Enhance
+potion
+value"
+
+[node name="armor" type="Label" parent="TextureRect/description_horizontal"]
+margin_left = 180.0
+margin_right = 222.0
+margin_bottom = 36.0
+custom_fonts/font = SubResource( 8 )
+text = "Reduces
+damage
+taken"
+
+[node name="gold_display" type="HBoxContainer" parent="TextureRect"]
+anchor_left = 0.301
+anchor_top = 0.875
+anchor_right = 0.301
+anchor_bottom = 0.875
+margin_left = -34.855
+margin_top = -16.0
+margin_right = 35.145
+margin_bottom = 16.0
+custom_constants/separation = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect/gold_display"]
+margin_right = 32.0
+margin_bottom = 32.0
+texture = ExtResource( 7 )
+
+[node name="Gold" type="Label" parent="TextureRect/gold_display"]
+margin_left = 34.0
+margin_top = 8.0
+margin_right = 70.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 3 )
+text = "Gold"
+align = 1
+valign = 1
+
+[connection signal="pressed" from="CloseScene" to="." method="_on_CloseScene_pressed"]
+[connection signal="pressed" from="TextureRect/texture_horizontal/potion_normal/potion_btn" to="." method="_on_potion_btn_pressed"]
+[connection signal="pressed" from="TextureRect/texture_horizontal/potion_enhance/enhance_btn" to="." method="_on_enhance_btn_pressed"]
+[connection signal="pressed" from="TextureRect/texture_horizontal/char_tougher/armor_btn" to="." method="_on_armor_btn_pressed"]

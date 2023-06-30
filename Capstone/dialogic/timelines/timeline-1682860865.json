@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I have finally found it. That was stressful.\nIt's time to review this material. Let's go to the school building."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682860865.json",
+		"name": "main-11"
+	}
+}

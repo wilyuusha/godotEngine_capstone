@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I need to hurry up and get inside the school building!\nI hope they haven't finished explaining the exam yet."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682835687.json",
+		"name": "main-7"
+	}
+}

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Tilesets/Serene_Village_32x32.png" type="Texture" id=1]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 174, 1066, 134, 108 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 65.5, 25 )
+
+[node name="House_2_2" type="StaticBody2D"]
+position = Vector2( 0, -24 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.5, 19 )
+shape = SubResource( 2 )

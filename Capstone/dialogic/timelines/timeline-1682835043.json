@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I need to hurry! Now that I have my School ID,\nit's time to clear this stage and move on."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682835043.json",
+		"name": "main-5"
+	}
+}

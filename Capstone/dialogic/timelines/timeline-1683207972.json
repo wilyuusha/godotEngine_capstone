@@ -1,0 +1,25 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Whoa, I just found out that red blood cells are these really cool tiny cells\nthat have this special protein called hemoglobin, which helps them carry oxygen around\nthe body! Isn't that amazing? I can't believe how important these little cells are for our health!"
+		},
+		{
+			"block_input": true,
+			"event_id": "dialogic_050",
+			"wait_time": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1683207972.json",
+		"name": "NPCone"
+	}
+}

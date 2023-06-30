@@ -1,0 +1,44 @@
+{
+	"events": [
+		{
+			"character": "character-1682756773.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hello, I would like to pass this material."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmmm, lemme check wait a second."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 3
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes, this is the material that the hint was conveying.\nCongratulations! You passed the exam.\nI'll give you a certificate as proof that you passed."
+		},
+		{
+			"character": "character-1682756773.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thank you so much, Teacher."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"The certificate before you grants passage to the chamber.\nGo forth and test your knowledge, young one,\nfor it is only with preparation that you can embark\non the journey that awaits you.\""
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682862569.json",
+		"name": "main-13"
+	}
+}

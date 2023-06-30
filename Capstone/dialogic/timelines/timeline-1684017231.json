@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The \"Kidney\" filter the blood, remove waste products, and produce urine,\nwhich carries these waste materials out of the body. Additionally,\nthe kidneys also help regulate blood pressure, electrolyte balance,\nand acid-base balance in the body."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684017231.json",
+		"name": "bookshelf14"
+	}
+}
